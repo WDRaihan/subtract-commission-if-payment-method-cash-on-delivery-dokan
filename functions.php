@@ -1,3 +1,5 @@
+```php
+<?php
 add_filter( 'dokan_prepare_for_calculation', 'wd_dokan_prepare_for_calculation', 10, 6 );
 function wd_dokan_prepare_for_calculation($earning, $commission_rate, $commission_type, $additional_fee, $product_price, $order_id){
 	$order = wc_get_order($order_id);
@@ -43,4 +45,4 @@ add_action('wp_footer', function(){
 	
 });
 
-
+```
